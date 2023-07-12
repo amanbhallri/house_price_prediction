@@ -1,0 +1,50 @@
+<html>
+  <body>
+    <h1>
+      House Price Prediction in Bangalore
+    </h1>
+    <hr>
+    <form action="/hp" method="post">
+      <table border="1">
+        <tr>
+          <td> Area in Square Feet</td>
+          <td> <input type="text" name="area"> </td>
+        </tr>
+        <tr>
+          <td> Bed Room Count </td>
+          <td>    
+            <select name="bhk">              
+              <option>2</option>              
+              <option>3</option>              
+              <option>4</option>              
+              <option>5</option>              
+              <option>6</option>              
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td> Bathroom Count </td>
+          <td> 
+            <select name="bath">               
+              <option>2</option>              
+              <option>3</option>              
+              <option>4</option>              
+              <option>5</option>              
+              <option>6</option>
+            </select> 
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="Predict the Price">
+            <input type="reset" value="Clear">
+          </td>
+        </tr>
+      </table>
+    </form>
+    {{ data}}
+    <hr>
+    <a href="/"> Home Page </a>
+    <button onclick="window.location.href='index.html'">House Price Prediction</button>
+  </body>
+</html>
